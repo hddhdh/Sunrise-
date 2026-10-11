@@ -1,0 +1,11 @@
+{
+  "name": "Beirut Sunrise Alarm",
+  "short_name": "Sunrise Alarm",
+  "description": "Beirut sunrise times and a reminder 2.5 hours before sunrise.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a1927",
+  "theme_color": "#10263b",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

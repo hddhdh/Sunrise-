@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10263b">
+  <meta name="description" content="See tomorrow's Beirut sunrise and set a reminder 2.5 hours before it.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Beirut Sunrise Alarm</title>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow"><span class="sun-icon" aria-hidden="true">☼</span> BEIRUT, LEBANON</div>
+    <h1>Meet the morning<br><span>before it arrives.</span></h1>
+    <p class="intro">Your local sunrise, with a reminder set 2½ hours ahead.</p>
+
+    <section class="sunrise-panel" aria-live="polite">
+      <div class="panel-label" id="date-label">SUNRISE</div>
+      <div class="sunrise-time" id="sunrise-time">--:--</div>
+      <div class="date-text" id="sunrise-date">Loading Beirut sunrise…</div>
+    </section>
+
+    <div class="alarm-info">
+      <div class="alarm-symbol" aria-hidden="true">◷</div>
+      <div><div class="panel-label">REMINDER TIME</div><div class="alarm-time" id="alarm-time">--:--</div></div>
+      <div class="offset">2½ hours<br>before sunrise</div>
+    </div>
+
+    <button id="alarm-button" type="button" disabled>Loading sunrise…</button>
+    <p class="status" id="status" role="status">Getting today's sunrise time.</p>
+    <p class="note">For the reminder to fire, keep this page open in a browser. See the README for important alarm limitations.</p>
+    <footer>Times shown in Beirut local time · <a href="https://sunrise-sunset.org/" target="_blank" rel="noreferrer">Sunrise data</a></footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
